@@ -3,3 +3,5 @@ tr '[:upper:]' '[:lower:]' < input.txt > output.txt
 
 Note: I found this solution online at 
 http://www.cyberciti.biz/faq/linux-unix-shell-programming-converting-lowercase-uppercase/
+
+Mark Lewis
