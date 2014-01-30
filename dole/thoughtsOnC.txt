@@ -1,0 +1,7 @@
+My original thought was that perhaps foo or bar
+were somehow continuing to use part of the allocated
+memory after they finished running. That seemed
+pertty far-fetched, however, and after perusing
+the solutions provided by some of my classmates, I
+think Andrew probably has the right idea--foo and/
+or bar are using memory beyond the allocated space.
