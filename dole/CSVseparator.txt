@@ -1,0 +1,10 @@
+The following perl command, found at
+http://www.perlmonks.org/?node_id=324749 and slightly modified to suit the
+situation, will print the grades found in the CSV file to the terminal:
+
+    perl -l -a -F, -n -e 'print $F[3]' example.txt
+
+Ideally, there would be a command to pick out the top five values and only
+print those, but I'm not proficient enough in perl to know how to do
+that, so in this case the user is left to read through and pick out those
+values themselves. Anyone else got an idea?

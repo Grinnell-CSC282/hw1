@@ -1,0 +1,5 @@
+The following perl command, found at
+http://www.perlmonks.org/?node_id=324749 and slightly modified to suit the
+situation, will print the grades found in the CSV file to the terminal:
+
+    perl -l -a -F, -n -e 'print $F[3]' example.txt

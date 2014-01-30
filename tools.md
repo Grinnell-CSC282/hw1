@@ -22,8 +22,9 @@ something close to an ASCII representation.
 
 ### `diff` - Compare files line by line
 
-### 'tail -x' - Shows you the last x lines in a file
+### 'chown' - Change the owner of a file
 
+### 'tail -x' - Shows you the last x lines in a file
 
 Transfering files
 -----------------
