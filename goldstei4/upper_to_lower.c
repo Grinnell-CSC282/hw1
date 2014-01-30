@@ -1,5 +1,14 @@
+/*
+upper_to_lower 
+@author: Justus Goldstein-Shirley [goldstei4]
+*/
+
 #include <stdio.h>
 
+/* 
+ * A procedure that, given a valid filename, changes all characters in the file
+ * to lowercase. 
+ */
 void upper_to_lower(char* name){
   FILE *file;
   file = fopen(name, "r");
