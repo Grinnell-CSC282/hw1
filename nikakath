@@ -4,6 +4,6 @@ sed -i 's/[ \t]*$//' FILE_NAME
 
 /* With sed, the 's/.../.../' is a substitute command. Essentially, you substitute the whitespace up until the 
 line-terminating character with nothing, basically deleting it. The -i flag is the insertion mode for sed which makes
-this possible. */
+this possible. To be honest, I still don't know the significance of the '*$' ... */
 
 Source: http://stackoverflow.com/questions/4438306/removing-trailing-whitespace-with-sed
