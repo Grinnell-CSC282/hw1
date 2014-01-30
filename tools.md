@@ -22,6 +22,8 @@ something close to an ASCII representation.
 
 ### `diff` - Compare files line by line
 
+### 'chown' - Change the owner of a file
+
 
 Transfering files
 -----------------
