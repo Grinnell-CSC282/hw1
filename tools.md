@@ -44,6 +44,18 @@ Processsing files
 
 ### `sed` - stream editer. Extract information from text files.
 
+Searching for Strings in your File System or Wherever
+-----------------------------------------
+
+### 'grep' - "file pattern searcher"
+
+Search for a string or regular expression in your filesystem. Grep will search through all file names and text documents. You can also give grep other sorts of documents or program outputs, and it will search through those, too.
+
+Example Use:
+'grep *.c .' Find all c files in your directory
+'history | grep git' Find all the git commands you've ever used
+
+
 General Use
 -----------
 
