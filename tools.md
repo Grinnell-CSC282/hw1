@@ -11,6 +11,12 @@ Extracting information about files
 See the contents of a file (binary or otherwise).  Note that `od -a` dumps
 something close to an ASCII representation.
 
+
+### `find` - Finds files using a given file-name.
+
+### `kill` - Sends a signal to a running process.
+
+
 Transfering files
 -----------------
 
