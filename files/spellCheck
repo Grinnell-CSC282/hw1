@@ -1,0 +1,14 @@
+#!/bin/bash
+# A sample script to create a list of all
+# misspelled words in a file, essay.txt
+echo -e "Please enter the text file you would like to spellcheck: "
+read filename
+
+hunspell -l $filename
+
+To create a list of misspelled words in essay.txt, simply input the following command to use spell.
+spell essay.txt
+
+Note: I found this solution online at http://dsl.org/cookbook/cookbook_15.html
+
+Lee Gatchell

@@ -1,0 +1,5 @@
+A suggested solution to remove carriage returns from a dos file is to use fromdos on the dosfile.
+Use the following command: fromdos dosfile.txt.
+The only drawback is that it overwrites the original dosfile, so if you'd like you could copy it first.
+
+I used the following website to find my solution. http://linuxcommando.blogspot.com/2008/05/delete-windowsdos-carriage-return.html
