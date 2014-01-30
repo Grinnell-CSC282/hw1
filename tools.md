@@ -38,7 +38,7 @@ them at their destination.
 Processsing files
 -----------------
 
-## `sed` - stream editer. Extract information from text files.
+### `sed` - stream editer. Extract information from text files.
 
 General Use
 -----------
