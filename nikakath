@@ -6,4 +6,4 @@ sed -i 's/[ \t]*$//' FILE_NAME
 line-terminating character with nothing, basically deleting it. The -i flag is the insertion mode for sed which makes
 this possible. The *$ limits this substitution to only whitespace and tabs at the end of the line. */
 
-Source: http://stackoverflow.com/questions/4438306/removing-trailing-whitespace-with-sed 
+Source: http://stackoverflow.com/questions/4438306/removing-trailing-whitespace-with-sed  
