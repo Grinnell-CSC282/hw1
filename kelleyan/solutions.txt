@@ -1,0 +1,46 @@
+
+Solutions to the simple tasks by Andrew Kelley
+
+*** Most of these solutions were found by piecing together 
+    information from "Linux Pocket Guide" by Daniel J. 
+    Barrett
+
+1. Given a DOS-formatted text file (lines end with \r\n rather
+   than just \n), convert it to a standard text file.
+
+	* Sam demonstrated this code as follows:
+	  - "tr -d '\r' < dosfile > newfile "
+
+2. Given a standard text file, convert all uppercase letters to lowercase.
+
+	* The code to do this once again uses 'tr':
+	  - " tr 'A-Z' 'a-z' < fileWithUppers > fileWithLowers "
+
+3. Given a standard text file, remove all blank spaces at the end of lines.
+
+	* Using sed:
+	  - " sed 's/[ \t]*$//' < input.txt > output.txt "
+	  - found this at www.unixguide.net/unix/sedoneliner.shtml
+	  - have an idea of how it works but not completely sure, 
+	    I understand that 's/' is the delete/replace, [ \t] is
+	    choosing spaces and tabs, but don't understand the rest.
+
+4. Make a list of all misspelled words in a text file.
+
+	* This uses a Unix tool known as aspell:
+	  - " aspell list < fileName "
+
+5. Given a CSV file in which each line has the form
+   LastName,FirstName,Assignment,NumericGrade 
+   find the the five highest grades on homework 2.
+
+	* This uses many Unix tools pipelined together:
+	  - " grep HW2 csvFile | sort -k4 -t, -n -r | cut -f4 -d, |
+	      sed -n 1,5p "
+
+6. Given an HTML file, find the URLs of all images. In case you don't know HTML,   those will typically look like  <img ... src="*URL*" ...>
+    - The img can have any capitalization (img, IMG, Img, iMg, etc.)
+    - There can be other text between the img and the src. (That text cannot 
+      include a greater than sign.)
+    - You may find it easier to start this problem by assuming that there's 
+      only one image tag on a line.

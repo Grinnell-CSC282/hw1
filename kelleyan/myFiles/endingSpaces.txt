@@ -1,0 +1,4 @@
+This document has lots of empty space                                               
+at the end of lines.                                             
+Hopefully this sed script                                                  
+works.                            		

@@ -1,0 +1,23 @@
+Andrew Kelley
+An attempt at an answer to the memory problem given in class.
+Given: 
+	x = malloc (...);
+	foo();
+	bar();
+	free(x);
+The call to free(x) causes the program to crash.
+The other hints were as follows:
+* Program crashes with the call to free.
+* Program does not crash without the call to free (but leaks memory)
+* foo and bar use x, but have no calls to free
+* Neither foo nor bar reassigns x, although they do include x[i] = ....
+
+My theory as to why the program crashes is that foo() and/or bar() 
+places more data into the memory allocated for x than it can hold, yet 
+is not enough data to crash in foo() or bar(). Something like placing
+a string that is too long at the end of an array. This would cause the 
+program to crash on the call to free(x) because there is still a pointer
+to memory that hasn't been allocated at the very edge of the originally
+allocated space.
+
+
