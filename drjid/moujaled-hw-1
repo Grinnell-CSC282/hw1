@@ -1,0 +1,23 @@
+Homework 1 - Maijid Moujaled
+
+The C Memory Problem
+Since he moved the call to free before bar and that run okay, then it must meant that something in bar is causing the issue. free takes a pointer x, as a parameter. Perhaps in bar, there is some kind of overflow that goes on in memory, such that when you try to access that pointer x, it results in a bad access... 
+
+
+Given a standard text file, convert all uppercase letters to lowercase.
+-- Source tr documentation
+	tr "[:upper:]" "[:lower:]" < upperFile > lowerFile
+
+Given a standard text file, remove all blank spaces at the end of lines.
+	sed -e 's/ *$//g' file_with_blank > file_with_no_blank
+Citation: http://www.unix.com/shell-programming-scripting/23602-how-remove-plank-spaces-end-lines.html
+Looking at sed's documentation, it uses this s/regexp/replacement/ . So this is using the regular expression to find a replace all blank spaces ' *' at the end of a file ($) with nothing. 
+
+
+Make a list of all misspelled words in a text file.
+	spell <file>
+This works on the MathLAN but not on my Mac. I guess Mac's version of UNIX doesn't come with spell by default. 
+I thought this was interesting because I assumed it would be the same UNIX since the Mac was based on top of UNIX but Oh was I wrong.  
+
+
+
