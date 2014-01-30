@@ -29,3 +29,10 @@ quickly and robustly. Useful options include --progress, which displays
 information on the progress of file transfers, -h, which  prints information in a
 human readable format, and -z, which compresses files before transfer and decompresses
 them at their destination.
+
+General Use
+-----------
+
+### `screen` - allows you to have sessions independent from your actual session.
+### `ps` - lets you know information about running processes.
+
