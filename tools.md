@@ -64,4 +64,6 @@ General Use
 ### 'ssh -X' - allows you to connect to a computer remotely with GUI capabilities
 ### 'top'    - lets you see the processes running on your system
 ### 'touch' - create an empty file or change a file's access and modification timestamps (http://en.wikipedia.org/wiki/Touch_%28Unix%29)
+### 'history' 
+shows history of most-used terminal commands and allows you to set aliases to them
 
