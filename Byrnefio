@@ -1,0 +1,32 @@
+Solutions to the problems we did not solve in class
+
+Convert to uppercase:
+
+  $ sed 's/\(.*\)/\U\1/' <input > output
+
+Remove trailing blank spaces:
+
+  $ sed -e 's/[ \t]*$//' <input >output
+
+List misspelled words:
+
+  $ ispell input
+
+Find the highest HW2 grades:
+
+  $ grep ',HW2,' CSV | sort -n -k4
+
+Find image URLS:
+
+  $ grep -i -o '<img[^>]*src=[^>]*>' input | grep -o '"[^"]*"'
+
+
+References:
+http://linuxcommando.blogspot.com/2008/05/how-to-convert-text-files-to-all-upper.html
+http://www.unixguide.net/unix/sedoneliner.shtml
+http://unixhelp.ed.ac.uk/CGI/man-cgi?sed
+http://www.grymoire.com/unix/Sed.html#uh-0
+http://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+http://kb.iu.edu/data/abxb.html
+http://linux.about.com/od/commands/a/Example-Uses-Of-The-Command-Sort.htm
+http://stackoverflow.com/questions/9060099/getting-the-jpg-images-from-an-html-file
