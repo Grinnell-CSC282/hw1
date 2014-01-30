@@ -1,0 +1,16 @@
+Detour: A C memory problem
+--------------------------
+
+    x = malloc (...);
+    foo ();
+    bar ();
+    free (x);   // CRASH
+
+* Program crashes with the call to free.
+* Program does not crash without the call to free (but leaks memory)
+* foo and bar use x, but have no calls to free
+* Neither foo nor bar reassigns x, although they do include x[i] = ....
+* What might be going wrong?
+
+Theory:
+Either foo or bar dispatches one or many threads, which continue(s) to operate on x in the background while the program attempts to free x, resulting in a bad access on x.
