@@ -1,7 +1,7 @@
 #!/bin/bash
 # A sample script to create a list of all
 # misspelled words in a file, essay.txt
-echo -e "Please enter the text file which you would like to spellcheck: "
+echo -e "Please enter the text file you would like to spellcheck: "
 read filename
 
 hunspell -l $filename
