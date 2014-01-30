@@ -18,6 +18,8 @@ something close to an ASCII representation.
 
 ### `grep` - search for strings within files.
 
+### `sort` - sorts its input (for example, you might give it grep's output)
+
 
 Transfering files
 -----------------
@@ -29,6 +31,12 @@ quickly and robustly. Useful options include --progress, which displays
 information on the progress of file transfers, -h, which  prints information in a
 human readable format, and -z, which compresses files before transfer and decompresses
 them at their destination.
+
+
+Processsing files
+-----------------
+
+## `sed` - stream editer. 
 
 General Use
 -----------
