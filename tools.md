@@ -43,6 +43,8 @@ Processsing files
 -----------------
 
 ### `sed` - stream editer. Extract information from text files.
+### 'tr' 
+translates characters
 
 Searching for Strings in your File System or Wherever
 -----------------------------------------
