@@ -16,6 +16,8 @@ something close to an ASCII representation.
 
 ### `kill` - Sends a signal to a running process.
 
+### `grep` - search for strings within files.
+
 
 Transfering files
 -----------------
