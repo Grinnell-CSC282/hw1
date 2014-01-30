@@ -22,6 +22,8 @@ something close to an ASCII representation.
 
 ### `diff` - Compare files line by line
 
+### 'tail -x' - Shows you the last x lines in a file
+
 
 Transfering files
 -----------------
@@ -34,6 +36,7 @@ information on the progress of file transfers, -h, which  prints information in 
 human readable format, and -z, which compresses files before transfer and decompresses
 them at their destination.
 
+### 'scp'   - copy files between two systems
 
 Processsing files
 -----------------
@@ -44,5 +47,7 @@ General Use
 -----------
 
 ### `screen` - allows you to have sessions independent from your actual session.
-### `ps` - lets you know information about running processes.
+### `ps`     - lets you know information about running processes.
+### 'ssh -X' - allows you to connect to a computer remotely with GUI capabilities
+### 'top'    - lets you see the processes running on your system
 

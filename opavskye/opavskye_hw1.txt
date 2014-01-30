@@ -1,0 +1,57 @@
+Erik Opavsky
+HW1
+
+2. Given an HTML file, find the URLs of all images.
+	-This problem seems pretty easy to solve with regular expressions,
+	and the way I would do this is to just go to java and use the library,
+	since that is probably the fastest way for me to do it.  Or maybe flex if
+	I can remember it.
+
+   Given a CSV file in which each line has the form
+	-Honestly, I'd import the file into libreoffice calc or excel and then 
+	sort on the the grades column.
+
+	
+   Given a standard text file, remove all blank spaces at the end of lines.
+	$ cat input.txt | sed 's/[ \t]*$//' > output.txt
+	source: http://www.cyberciti.biz/tips/delete-leading-spaces-from-front-of-each-word.html
+
+3. Done
+
+4. A C memory problem
+	I've managed to recreate the problem with the following program:
+
+#include <stdlib.h>
+
+int * x;
+
+void foo() {
+  x[0] = 1;
+  x[1] = 2;
+
+};
+
+void bar() {
+  x[3] = 3;
+  x[-1] = 4;
+};
+
+int main()
+{
+  x = malloc(4 * sizeof (int));
+  foo();
+  bar();
+  free(x);
+  return 0;
+}
+
+	As you can see, I do x[-1] = 4, which is clearly not good.  So, I suspect the issue
+	with the program is that either foo() or bar() has an out of bounds reference to 
+	the array on the left side.  I did not see this issue when I went past the bounds 
+	of the array to the right (i.e. x[4] = 5;).  I bet the code for either foo() or bar() 
+	uses some kind of computation to get the array index which we want to modify, and 
+	that computation is incorrect and sometimes gives us a negative number.
+
+
+
+
