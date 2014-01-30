@@ -10,11 +10,13 @@ Remove trailing blank spaces:
 
 List misspelled words:
 
-  $ ispell input
+  $ spell input
 
 Find the highest HW2 grades:
 
-  $ grep ',HW2,' CSV | sort -n -k4
+  $ grep ',HW2,' CSV | sort -n -k4 
+  
+  I forgot you only displayed the top 5 grades. I think adding '| sed 5q' would fix that but I haven't tested that part
 
 Find image URLS:
 
