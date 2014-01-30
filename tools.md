@@ -20,6 +20,8 @@ something close to an ASCII representation.
 
 ### `sort` - sorts its input (for example, you might give it grep's output)
 
+### `diff` - Compare files line by line
+
 
 Transfering files
 -----------------
