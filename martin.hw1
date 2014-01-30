@@ -1,0 +1,17 @@
+Homework 1 - Martin Estrada
+
+For A C Memory Problem:
+
+I believe foo and bar need to call to a different pointer in malloc. I also believe there is a problem with
+bar () since free (x) work after it. 
+
+Make a list of all misspelled words in a text file.
+  
+    aspell name-of-file
+    
+    
+Given a standard text file, remove all blank spaces at the end of lines.
+
+    sed -e 's/ *$//g' file_text > file_text_with_no_blank
+    
+Citation: http://www.unix.com/shell-programming-scripting/23602-how-remove-plank-spaces-end-lines.html
