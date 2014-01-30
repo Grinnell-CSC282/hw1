@@ -5,3 +5,11 @@ Note: I found this solution online at
 http://www.cyberciti.biz/faq/linux-unix-shell-programming-converting-lowercase-uppercase/
 
 Mark Lewis
+
+To change uppercase to lowercase using awk, use the command:
+awk '{ print tolower($0) }' input.txt > output.txt
+
+Note: I found this solution online at 
+http://linuxcommando.blogspot.com/2008/05/how-to-convert-text-files-to-all-upper.html
+
+Lee Gatchell
