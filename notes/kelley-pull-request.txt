@@ -1,0 +1,35 @@
+You can merge this Pull Request by running
+
+  git pull https://github.com/southpaw27/hw1 master
+Or view, comment on, or merge it at:
+
+  https://github.com/Grinnell-CSC282/hw1/pull/1
+
+Commit Summary
+
+added tools to tools.md
+Solutions added for everything except URL of img in HTML files. Also added files for testing
+Created a single folder for my solutions for an easy addition to the class repository
+citations added to solutions.txt
+File Changes
+
+R kelleyanHW1/README.md (0)
+R kelleyanHW1/files/Makefile (0)
+A kelleyanHW1/files/csvFile.csv (11)
+R kelleyanHW1/files/dosfile (0)
+A kelleyanHW1/files/endingSpaces.txt (4)
+A kelleyanHW1/files/imageURLTest.html (76)
+R kelleyanHW1/files/makedos.c (0)
+A kelleyanHW1/files/misspellings.txt (4)
+A kelleyanHW1/files/uppers.txt (1)
+A kelleyanHW1/memoryProblem.txt (23)
+A kelleyanHW1/solutions.txt (46)
+A kelleyanHW1/tools.md (48)
+R kelleyanHW1/u2l/README.md (0)
+R kelleyanHW1/undos/README.md (0)
+R kelleyanHW1/undos/dosfile (0)
+D tools.md (12)
+Patch Links:
+
+https://github.com/Grinnell-CSC282/hw1/pull/1.patch
+https://github.com/Grinnell-CSC282/hw1/pull/1.diff
