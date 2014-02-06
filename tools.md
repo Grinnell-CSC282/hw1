@@ -69,3 +69,4 @@ General Use
 ### 'history' 
 shows history of most-used terminal commands and allows you to set aliases to them
 
+### 'clear'  - clears the terminal window
